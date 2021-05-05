@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+        <script defer
+        src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+        ></script>
+
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+      
+    
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="/src/img/icons/icon-128x128.png">
+        <link rel="apple-touch-icon" href="/src/img/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" href="/src/img/icons/icon-384x384.png">
+        <meta name="apple-mobile-web-app-status-bar" content="#630665">
+        <meta name="theme-color" content="#c748b9",>
+        <title>Freshers App</title>
+    </head>
+    <body>
+
+
+        <div class="fullscreen">
+       
+            <nav class="nav-mobile">
+
+                <a href="/index.html"><img class="logo" src="/src/img/Edge-Hill-University-new.png" alt="logo"></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links nav-center" id="other-navs">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/freshers.html">Freshers Events</a></li>
+                    <li><a href="/pages/locations.html">Locations</a></li>
+                </ul>
+
+            </nav>
+      
+            <div class="login-wrapper">
+                <div class="inner-wrapper">
+                   
+                    <!-- Title -->
+                        <h1 class="login-heading" id="loggedIn">Admin Login</h1>
+                    <!-- Login form -->
+                <form id="login-form">
+                    
+                    <div class="input-field">
+                        <label for="login-email">Email </label> <br>
+                        <input type="email" id="login-email"  required />
+                        
+                    </div>
+                    <div class="input-field ">
+                        <div class="password">
+                      <label for="login-password">Password</label> <br>
+                      <input type="password" id="login-password"  required />
+                      
+                        </div>
+                    </div>
+                    <!-- Login form button to login -->
+                    <div class="flex">
+                    <button class="btn-login" id="login">Login</button>
+                   
+                    
+                   
+                    </div>
+                </form>
+                
+        </div>
+        
+    </div>
+    
+              
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA1PqGP614gXigN5SmnK3vk-ravIUfucI8",
+            authDomain: "freshers-eventehu.firebaseapp.com",
+            projectId: "freshers-eventehu",
+            storageBucket: "freshers-eventehu.appspot.com",
+            messagingSenderId: "523462044684",
+            appId: "1:523462044684:web:e6fd94901875a694341229"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+       
+
+
+    </script>
+ 
+ <script src="/src/js/auth.js" defer></script>
+ <script src="/src/js/nav.js" defer></script>
+ <script src="/src/js/app.js" defer></script>
+       
+    </body>
+</html>

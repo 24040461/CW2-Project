@@ -1,0 +1,532 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;800&display=swap');
+
+
+/* CSS VARIABLES */
+:root {
+    --primary: #e3d1e2;
+    --dark: #630665;
+    --light: #c748b9;;
+    --shadow: 1px 1px 5px 4px rgba(0,0,0,0.14);
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;;
+ font-weight: 500;
+ line-height: 1.6;
+ font-size: 14px;
+}
+.fullscreen{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 85%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temp{
+    display: grid;
+   grid-gap: 1em;
+    grid-template: 
+    "main-info"
+    "intro-freshers"
+    "lessons";
+   
+}
+p{
+    margin: 0 0.3em;
+    padding-bottom: 1em;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 1em 0;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: fit-content;
+    text-align: center;
+}
+h2{
+    margin: 0;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.freshers-question {
+    text-align: center;
+    font-weight: 800;
+}
+.mini-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Styleing H Tages */
+.purple{
+    background-color: rgba(171, 27, 161, 0.5);
+    border-radius: 10px;
+    margin-bottom: .3em;
+    padding: 0 10px;
+}
+.yellow{
+    background-color: rgb(203, 232, 19, 0.5);
+    border-radius: 10px;
+    margin-bottom: .3em;
+    padding: 0 10px;
+}
+.green{
+    background-color: rgba(19, 232, 69, 0.5);
+    border-radius: 10px;
+    margin-bottom: .3em;
+    padding: 0 10px;
+}
+.red{
+    background-color: rgba(203, 21, 21, 0.5);
+    border-radius: 10px;
+    margin-bottom: .3em;
+    padding: 0 10px;
+}
+.blue{
+    background-color: rgba(	104,185,226, 1);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: .3em;
+}
+.flex{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* Nav/Header */
+
+.logo {
+    cursor: pointer;
+    /* border-right: black 5px solid; */
+    background-color: rgba(	104,185,226, 1);
+    padding: .7em 0;
+    padding-left: 1em;
+    
+}
+nav{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.nav-mobile li a{
+    color: black;
+}
+
+.nav-links{
+    display: none;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-links li a{
+    display: inline-block;
+    padding: 0 1.2em;
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    text-decoration: underline 3px orange;
+}
+.nav-mobile{
+   max-width: 1500px;
+    background-color: rgba(	104,185,226, 1);
+    margin: 0 auto;
+    color: black;
+   justify-content: space-between;
+}
+.nav-mobile li {
+    border-right: black 2px solid;
+    margin-right: 1em;
+    color: black;
+}
+
+.nav-mobile li {
+    margin-top: 1em;
+    padding: 0 0.5em;
+    border-right: 0;
+    margin-bottom: 2em;
+}
+
+.nav-links li:last-child{
+    border:0;
+}
+
+.nav-center{
+
+    align-items: center;
+}
+
+.nav-links.show{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+ }
+
+
+/* Hamburger menu  */
+.hamburger{
+    background-color:transparent;
+    margin-right: 1em;
+    border: 0;
+    /* display: none; */
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.hamburger:focus {
+    outline: none;
+}
+/* here */
+
+/* jumbrotron styleing */
+/* Ref  https://www.youtube.com/watch?v=gor5BvT2z88*/
+.carousel{
+    
+    overflow: hidden;
+    max-width: 1280px;
+    position: relative;
+    grid-area: carousel;
+    height: 500px;
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+    display: none;
+}
+
+.carousel .carousel_item img {
+    
+    position: center;
+    height: auto;
+    max-width: 1280px;
+    
+}
+.carousel_item img{
+   
+    width: 100%;
+}
+
+.carousel .carousel_item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+.carousel .carousel_actions button {
+    border-radius: 50px;
+    background-color: rgba(52, 48, 48, 0.5);
+    color: white;
+    border: 0;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin: 0 .3em;
+    font-size: 3em;
+}
+
+/* Main info */
+.main-info{
+    grid-area: main-info;
+   
+}
+.intro-freshers{
+    grid-area: intro-freshers;
+   
+    
+}
+
+.btn-newPage {
+    background-color: rgb(145, 42, 179);;
+    padding: 1em 2em;
+    color: white;
+    border: 0;
+    border-radius: 2em;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+    margin: .8em 0;
+}
+.btn-logout{
+    background-color: rgb(145, 42, 179);;
+    padding: 1.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+    margin: .8em 0;
+    margin-top: 3em;
+    width: 100%;
+}
+.btn-newPage:active {
+    padding: 2em 4em;
+    transition-duration: 1s;
+}
+.admin-login {
+    
+    width: 100%;
+}
+
+.flex h2{
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+
+
+
+/* Modal styling */
+.about-lessons{
+    width: 100%;
+    height: 100%;
+    grid-area: lessons;
+    display: flex;
+    flex-direction: column;
+}
+.modal-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin-top: 0;
+}
+.modal-open{
+    
+   
+    padding: 8em 2em;
+    color: white;
+    border: 0;
+    border-radius: 2em;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+
+}
+
+.modal1{
+    background-image: url(/src/img/lecture.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.modal2{
+    background-image: url(/src/img/seminar.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.modal3{
+    background-image: url(/src/img/1-1.jpg);
+    background-position: center;
+    background-size: cover; 
+    margin-bottom: 2em;
+}
+.modal4{
+    background-image: url(/src/img/techhub.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.modal5{
+    background-image: url(/src/img/catalyst.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.modal6{
+    background-image: url(/src/img/food\ place.jpg);
+    background-position: center;
+    background-size: cover; 
+   
+}
+.modal7{
+    background-image: url(/src/img/sports.jpg);
+    background-position: center;
+    background-size: cover; 
+    margin-bottom: 2em;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+    animation: modal-open .5s;
+}
+
+.modal-content{
+    background: #fff;
+    width: 70%;
+    max-height: 95%;
+    margin: 20% auto;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+.loc-width{
+    width: 80%;
+    margin: 6% auto;
+    padding: 2px 12px;
+}
+
+.modal-header{
+    font-weight: 500;
+    padding: 0.5em 0;
+    font-size: 26px;
+    margin: 0;
+}
+
+.modal-header .modal-close{
+    float:right;
+    font-size: 20px;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.modal-body{
+    color: #7b7b7b;
+    padding: 15px 20px;
+    font-size: 10px;
+}
+
+.modal-footer{
+    padding: 15px 0;
+}
+
+.modal-footer .modal-close{
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #1a73e8;
+
+}
+
+ul{
+    margin-bottom: 2em;
+}
+
+iframe{
+    max-height: 150px;
+    width: 100%;
+}
+
+
+
+@keyframes modal-open{
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
+/* Admin page login styling */
+.login-heading {
+ text-align: center;
+ margin: 0;
+ 
+}
+.login-wrapper{
+    border: purple solid .5px;
+    width: 80%;
+    margin: 4em auto;
+    border-radius: 20px;
+    
+    
+}
+.inner-wrapper{
+    margin: 1em 2em;
+}
+
+.input-field input{
+    width: 85%;
+    padding: 1em 1em;
+    
+    border-radius: 5px;
+    font-size: 1em;
+}
+.input-field label{
+   font-size: 1.25em;
+   font-weight: 600;
+   margin: 0;
+}
+
+.btn-login{
+    background-color: rgb(145, 42, 179);;
+    padding: 1.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+    margin: .8em 0;
+    margin-top: 3em;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.password {
+    margin-top: 1em;
+    
+}

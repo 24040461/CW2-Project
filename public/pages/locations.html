@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+        <script defer
+        src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+        ></script>
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
+         <!-- ios support -->
+         <link rel="apple-touch-icon" href="/src/img/icons/icon-128x128.png">
+         <link rel="apple-touch-icon" href="/src/img/icons/icon-192x192.png">
+         <link rel="apple-touch-icon" href="/src/img/icons/icon-384x384.png">
+         <meta name="apple-mobile-web-app-status-bar" content="#630665">
+         <meta name="theme-color" content="#c748b9",>
+        <title>Freshers App</title>
+    </head>
+
+
+  
+    <body>
+
+
+        <div class="fullscreen">
+       
+            <nav class="nav-mobile">
+
+                <a href="/index.html"><img class="logo" src="/src/img/Edge-Hill-University-new.png" alt="logo"></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links nav-center" id="other-navs">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/freshers.html">Freshers Events</a></li>
+                    <li><a href="#">Locations</a></li>
+                    
+                    <li><a href="/pages/login.html">Admin Login</a></li>
+                </ul>
+
+            </nav>
+      
+        <div class="wrapper">
+            <!-- title + brief intro -->
+            <h1>Locations</h1>
+            <p>In the first week of University it can seem very overwheelming and trying to find all the new places
+                and what building serve what purspose so this is a quick run down of the main buildings on campus
+                which will hopefully make you feel more comfa
+            </p>
+
+            <section class="about-lessons ">
+
+              
+               
+                <!--  REF : https://www.youtube.com/watch?v=6ophW7Ask_0&t=1616s -->
+                <!-- Modal buttons -->
+                <div class="modal-flex">
+                <h2 class="purple">Buildings for learning</h2>
+                    <button class="modal-open modal4 flex" data-modal="modal4"><h3>Tech Hub</h3></button>
+                    <button class="modal-open modal5 flex" data-modal="modal5"><h3>Catalyst / library</h3></button>
+                <h2 class="green">Building for food/freshers event</h2>
+                    <button class="modal-open modal6 flex" data-modal="modal6"><h3>Main Building</h3></button>
+                <h2 class="red">Building for sports</h2>
+                    <button class="modal-open modal7 flex" data-modal="modal7"><h3>Sports/Gym</h3></button>
+                </div>
+                
+                <!-- Modals -->
+                <!-- Tech Hub -->
+                <div class="modal" id="modal4">
+                    <div class="modal-content loc-width">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Tech Hub
+                         
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                <p>This building is the main building that will be used throughout the degree for 
+                                    most students.
+                                The building itself has three floors but we will not use the top floor as this is 
+                                    another department. </p>
+                                <ul>First Floor
+                                    <li>Lecture hall (middle of building)</li>
+                                    <li>The CAVE, a 4k super immersive 3D environment</li>
+                                    <li>Seminar rooms</li>
+                                    <li>Lectures offices at the back</li>
+                                </ul>
+                                <ul>Second Floor
+                                    <li>Private rooms(ones to ones or groups study basiclly if you need its to be quite)</li>
+                                    <li>Seminar rooms</li>
+                                    <li>Lectures offices at the back</li>
+                                    <li>Chiars and Tables set up for students</li>
+                                </ul>
+                                <iframe
+                                width="600"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBceHjfgySAIJkBbb79Rlzve2Fs0BkBNWI
+                                  &q=edge hill computer science">
+                              </iframe>
+                            </div>
+                    </div>
+                </div>
+                <!-- Catalyst -->
+                <div class="modal" id="modal5">
+                    <div class="modal-content loc-width">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Catalyst
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                This building is where students can go to study and meet fellow students also the
+                                careers service will hold events this can range from employer events to 
+                                hosting mock interviews.The building is located in the heart of the campus.
+                                 Why is this a good place for students to study
+                                <ul>
+                                <li>Confidential interview spaces</li>
+                                <li>Meeting areas</li>
+                                <li>24/7 (due to covid it is now 08:00 to 23:00)</li>
+                                <li>Houses 230,000 books on 5,000 shelves</li>
+                                <li>Computers with all the software that will be needed in your degree</li>
+                                <li>Top floor open roof gardan</li>
+                                <li>Help desk</li>
+                                </ul>
+                                <iframe
+                                width="600"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBceHjfgySAIJkBbb79Rlzve2Fs0BkBNWI
+                                  &q=edge hill 53 Degrees Coffee ">
+                              </iframe>
+                            </div>
+                    </div>
+                </div>
+                <!-- Main building -->
+                <div class="modal" id="modal6">
+                    <div class="modal-content loc-width">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Main Building
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                <P>This building will be a popular visit during the first week of univeristy.
+                                This building serves as the main building to find food on the campus this can
+                                be sages food hall where food will be offered form 7am throught to 9pm. Also 
+                                if you want to be adventurous varoious street food can be found inside the hub
+                                from monday-friday. Large seating area to allow to catch up with fellow students
+                                over a bite to eat</P>
+                                <p>
+                                   This is not the only use of this building for the first week anyways as this is 
+                                   the epicenter of freshers week most of the socicitys will have stall up which you
+                                   can join and really get out there and do what you really enjoy with fellow students.
+                                </p>
+
+                                <ul>
+                                   <li>Food court</li>
+                                   <li>Mccolls - Shop</li>
+                                   <li>Seating areas down and upstaris</li>
+                                   <li>Main building for freshers week joining socicitys</li>
+                                </ul>
+                                <iframe
+                                width="600"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBceHjfgySAIJkBbb79Rlzve2Fs0BkBNWI
+                                  &q=53.55978159712426, -2.8732608002123925">
+                              </iframe>
+                            </div>
+                    </div>
+                </div>
+                <!-- sports building -->
+                <div class="modal" id="modal7">
+                    <div class="modal-content loc-width">
+                         <!-- Information inside the modal -->
+                        <div class="modal-header">Sports
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                               
+                                <p>Well if your looking to do physical activites you have come to the right places.
+                                  The sports center has a gym with fitness equipment many with in-built internet 
+                                  and entertainment technology. There is also a swimming pool with with 6 lanes. 
+                                  Last of all in the sports center is a sports hall with a 8 court sports hall so 
+                                  sports can be played all year round no matter the weather.
+                                </p>
+                                <p>
+                                    <ul> Other sports facilities
+                                        <li>Wilson Center - Gymnasium</li>
+                                        <li>Athletics Track</li>
+                                        <li>Fitness Trail</li>
+                                        <li>3X 3G Football courts</li>
+                                        <li>1x 3G Football / Rugby Pitch Full size</li>
+                                    </ul>
+                                </p>
+                                <iframe
+                                width="600"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBceHjfgySAIJkBbb79Rlzve2Fs0BkBNWI
+                                  &q=edge hill sports center ">
+                              </iframe>
+                            </div>
+                    </div>
+                </div>
+
+           
+            </section>
+        </div>
+    </div>
+        <script src="/src/js/location.js" defer></script>
+        <script src="/src/js/app.js" defer></script>
+    </body>
+</html>

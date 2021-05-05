@@ -1,0 +1,114 @@
+
+
+.title-events {
+    margin: 1em 0;
+    margin-top: 0.3em;
+    padding: 0;
+}
+.fresher-wrapper{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.adding-info {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.adding-info input {
+    width: 90%;
+    padding: 10px;
+   margin-bottom: .3em;
+}
+.adding-info textarea {
+    margin-top: .3em;
+    width: 90%;
+    padding: 10px;
+    max-width: 90%;
+   
+}
+
+.fresher-wrapper button{
+    background-color: rgb(145, 42, 179);;
+    padding: 1em 3em;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+    margin: .8em 0;
+    /* width: 20%; */
+    
+    align-self: center;
+} 
+
+
+.content{
+    /* background: blue; */
+    border-radius: 30px;
+    padding: 1em;
+    border: 1px red solid;
+}
+
+.fresh-ul{
+    margin: 0;
+    padding: 0;
+}
+.fresher-wrapper ul{
+    list-style-type: none;
+}
+.fresher-wrapper li {
+    margin-top: 1em;
+    border-top: solid rgb(52, 51, 51, .2) 2px;
+    padding: 0 .2em;
+    padding-bottom: .2em;
+    border-radius: 5px;
+    position: relative;
+}
+
+.fresher-wrapper li span{
+    display: block; 
+}
+
+.span-test{
+    color: red;
+}
+.fresher-wrapper li span:nth-child(1){
+    font-size: 18px;
+    
+    margin-top: 6px;
+    color: black;
+}
+.fresher-wrapper li span:nth-child(2){
+    font-size: 13px;
+    margin-top: 6px;
+    color: rgb(79, 76, 76);
+    
+}
+
+.fresher-wrapper li div { 
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    font-size: 13px;
+    
+}
+#hidden {
+   color: red;
+   display: block;
+}
+
+
+.fresher-wrapper  form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+

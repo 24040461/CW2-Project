@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+    <head>
+        <!-- https://web.dev/add-manifest/ -->
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+        <script defer
+        src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+        ></script>
+        
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="public/src/img/icons/icon-96x96.png">
+        <link rel="apple-touch-icon" href="public/src/img/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" href="public/src/img/icons/icon-384x384.png">
+        <meta name="apple-mobile-web-app-status-bar" content="#630665">
+        <meta name="theme-color" content="#c748b9",>
+        <title>Freshers App</title>
+    </head>
+    <body>
+
+        <div class="fullscreen">
+       
+            <nav class="nav-mobile">
+
+                <a href="#"><img class="logo" src="/src/img/Edge-Hill-University-new.png" alt="logo"></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links nav-center" id="other-navs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/pages/freshers.html">Freshers Events</a></li>
+                    <li><a href="/pages/locations.html">Locations</a></li>
+                    <li><a href="/pages/login.html">Admin Login</a></li>
+                    
+                </ul>
+
+            </nav>
+      
+        <!-- Carousel -->
+        <section class="carousel"> 
+            <div class="carousel_item carousel_item--visible">
+                <img src="/src/img/colour2.jpg" alt="">
+            </div>
+            <div class="carousel_item ">
+                <img src="/src/img/ducks.jpg" alt="">
+            </div>
+             <div class="carousel_item">
+                 <img src="/src/img/tester2.jpg" alt="">
+             </div>
+             <div class="carousel_item">
+                <img src="/src/img/tester.jpg" alt="">
+            </div>
+             <div class="carousel_actions">
+                 <button id="carousel_button--prev" aria-label="Previous Slide"><</button>
+                 <button id="carousel_button--next" aria-label="Next Slide">></button>
+             </div>
+
+             
+       </section>
+       <div class="wrapper">
+        <div class="temp">
+            <section main-info>
+                <div class="purple">
+                    <!-- Title + Introduction -->
+                    <h1>Welcome to the computer science department</h1>
+                    
+                    <p>First of all its a great privilege to be able to welcome you to the computer science 
+                        department and we hope you will enjoy your experience with Edge hill univeristy
+                    </p>
+                    <p>
+                       We know the first week can be daunting especially with most of you leaving home for the 
+                       first time and experienceing a whole new experience. This is why this app was created
+                       to try and ease your experience in the first weeks of univiersty life within the 
+                       computer science department. This app will aim to give you information that will be 
+                       helpful and help streamline your inintal experience of freshers week.
+                    </p>
+                </div>
+            </section>
+            <section intro-freshers>
+                <!-- Brief intro into freshers -->
+                    <div class="green flex">
+                    <h2 >Brief intro into freshers</h2>
+                   
+                         <p class="mini-title">Induction week</P>
+                        <p> This is where you will get to grips with login information and have a brief overview 
+                            of what your degree will be like. Dont be scared of this as it is just to get everyone
+                            up to speed as the real work will start week two. In the induction week it will be more
+                            based around team building exercises and getting to know your other class mates.
+                        </p>
+                    
+                         <p class="mini-title">Freshers week</P>
+                        <p>This is where you can join societies and there will be differnet events that will take
+                            place throughtout the week this can be anything if you think you will enjoy it you should
+                            join it. There will be some events that are recommend by the department that are linked 
+                            below which could help you devlop more in your degree and also meet new people which also
+                            enjoy learning new things around the subject so click the button below to learn more about 
+                            the events. 
+                        </p>
+                   
+                    <a href="/pages/freshers.html"><button class="btn-newPage">Learn More</button></a>
+                </div>
+                
+            </section>
+            <!-- Section on the differnt lesson types -->
+            <section class="about-lessons ">
+
+                <h2 class="red"> Learn More About University </h2>
+                <!--  REF : https://www.youtube.com/watch?v=6ophW7Ask_0&t=1616s -->
+                <!-- Modal buttons -->
+                <div class="modal-flex">
+                <button class="modal-open modal1 flex" data-modal="modal1"><h3>Lecture</h3></button>
+                <button class="modal-open modal2 flex" data-modal="modal2"><h3>Seminars</h3></button>
+                <button class="modal-open modal3 flex" data-modal="modal3"><h3>Personal Tutorials</h3></button>
+                </div>
+                <!-- Modals -->
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Lecture
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                <p>Lectures tend to have a high number of students in a big room or lecture theatre or lecture hall </p>
+
+                               <p> They typically have at least one lecturer who will speak to the class and has less interaction with others throughout, 
+                                but you’ll adjust pretty quickly, maybe not straight from your inaugural lecture, but you will adapt easily. Lectures are 
+                                predominantly for students taking class notes as their teacher works through a presentation, and/or case studies and theories 
+                                related to the subject, which is the basic lecture meaning.</p>
+
+                            </div>
+                           
+                    </div>
+                </div>
+
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Seminars
+                           
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                <!-- Ref  https://www.futurelearn.com/info/courses/prepare-to-study-uk/0/steps/48564 -->
+                               <p> When you attend lectures, you’re usually with a large group of students, and there’s little or no opportunity for discussion. Seminars however, 
+                                are small group sessions which give you the opportunity to discuss topics in some depth. These are often related to the lectures, but in addition 
+                                you may be given work to do beforehand. Depending on your academic field, you might be asked to;</p>
+                                <ul>
+                               <li> read a case study</li>
+                               <li> investigate some research</li>
+                               <li> read and evaluate a journal article</li>
+                            </ul>
+                       
+                            
+                    </div>
+                </div>
+            </div>
+
+                <div class="modal" id="modal3">
+                    <div class="modal-content">
+                        <!-- Information inside the modal -->
+                        <div class="modal-header">Personal Tutorials
+                            <button class="icon modal-close"><i class="material-icons">close</i></button></div>
+                            <div class="modal-body">
+                                <!-- Ref https://www.sheffield.ac.uk/acse/current/undergraduates/personaltutorials -->
+                               <ul> Personal tutors are expected to:
+
+                                <li> Provide pastoral support</li>
+                                <li> Act as an academic and professional mentor</li>
+                                <li> Advise their tutees on academic and professional skills</li>
+                                <li> Encourage tutees to engage with their Higher Education Achievement Report (HEAR)</li>
+                                <li> Be aware of any problems that their personal tutees have, and the impact that these problems have on their academic progress</li>
+                                <li> Support learning in academic modules</li>
+                           
+                            </ul>
+                            </div>
+                           
+                    </div>
+                </div>
+            </section>
+            <section class="worry">
+                <div class="blue flex">
+                    <h2>Try not to worry</h2>
+                    <p>
+                        At Edge Hill computer sceicne department the first year students all do the same 
+                        modules no matter what degree you picked this allows you as a student to grow but also 
+                        not lock you down. You mighy find out through out the year that your degree is not for you 
+                        and you enjoy Web Design Devlopment for example so you can easily change if there is space 
+                        of course but dont feel that you have already specialized yourself so in reality it is like 
+                        a tester year if you like your degree great if not and you enjoy doing something else more
+                         then you have had this year to try everything and wont find yourslef being far behind
+                    </p>
+                    <p>
+                        When it comes to freshers try and get yourself out there everyone will be going through the same 
+                        difficults but try not to look at other people and think they are better than you go at your own pace 
+                        if it is to overwheleming have a rest day just talking to your flat. Remember you have taken a massive 
+                        step in your life and to alot of you will be a completly new situation it make take some people longer 
+                        than others.
+                    </p>
+                    <p>
+                        But if it gets worse and you do feel isolated do remeber at Edge Hill there is a help desk 
+                        that will help no matter the probelm so please dont feel scared to reach out to them and 
+                        tell them your issue they will likely find an way to reslove the issue at hand
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="yellow flex">
+                <h2 >Contact us</h2>
+                <P>If do have any issues please click one of the two buttons below and find help the 
+                    first button will lead you to a page about staff information and the other 
+                    button will lead to student support.
+                </P>
+                <a href="https://www.edgehill.ac.uk/computerscience/people/"><button class="btn-newPage ">Staff</button></a>
+                <a href="https://www.edgehill.ac.uk/studentservices/"><button class="btn-newPage ">Student Services</button></a>
+             
+            </div>
+            </section>
+            
+            
+        </div>
+       </div>
+       </div>
+       <script src="/src/js/index.js" defer></script>
+       <script src="/src/js/app.js" defer></script>
+      
+    </body>
+</html>
